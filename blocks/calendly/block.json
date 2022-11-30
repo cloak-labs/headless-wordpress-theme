@@ -1,14 +1,13 @@
 {
-    "name": "acf/testimonial",
-    "title": "Testimonial",
-    "description": "A custom testimonial block.",
+    "name": "acf/calendly",
+    "title": "Calendly",
+    "description": "A custom block for Calendly integration.",
     "category": "widgets",
-    "icon": "editor-quote",
-    "keywords": ["testimonial", "review", "client", "customer", "quote"],
+    "icon": "external",
+    "keywords": ["calendly", "calendar", "booking"],
     "acf": {
         "mode": "edit",
-        "renderTemplate": "block.php",
-        "postTypes": ["page", "post"]
+        "renderTemplate": "block.php"
     },
     "align": false,
     "supports": {
@@ -24,17 +23,13 @@
         }
     },
     "attributes": {
-        "backgroundColor": {
-            "type": "string",
-            "default": "blue-800"
-        },
         "style": {
             "type": "object",
             "default": {
                 "spacing": {
                     "margin": {
-                        "top": "40px",
-                        "bottom": "40px"
+                        "top": "80px",
+                        "bottom": "80px"
                     }
                 }
             }

@@ -4,7 +4,7 @@ html :where(.editor-styles-wrapper) {
 
 .editor-styles-wrapper .is-style-outline > .block-editor-rich-text__editable.wp-block-button__link{
     background-color: transparent !important;
-    color: #2A335A !important;
+    color: #121738 !important;
 }
 .editor-styles-wrapper .is-style-outline > .block-editor-rich-text__editable.wp-block-button__link.has-blue-900-background-color{
     border-color: var(--wp--preset--color--blue-900) !important;
@@ -12,6 +12,9 @@ html :where(.editor-styles-wrapper) {
 .editor-styles-wrapper .is-style-outline > .block-editor-rich-text__editable.wp-block-button__link.has-blue-800-background-color{
     border-color: var(--wp--preset--color--blue-800) !important;
 }
-.editor-styles-wrapper .is-style-outline > .block-editor-rich-text__editable.wp-block-button__link.has-green-100-background-color{
-    border-color: var(--wp--preset--color--green-100) !important;
+.editor-styles-wrapper .is-style-outline > .block-editor-rich-text__editable.wp-block-button__link.has-purple-500-background-color{
+    border-color: var(--wp--preset--color--purple-500) !important;
+}
+.editor-styles-wrapper .is-style-outline > .block-editor-rich-text__editable.wp-block-button__link.has-pink-300-background-color{
+    border-color: var(--wp--preset--color--pink-300) !important;
 }
