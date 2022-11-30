@@ -1,0 +1,38 @@
+{
+    "name": "acf/calendly",
+    "title": "Calendly",
+    "description": "A custom block for Calendly integration.",
+    "category": "widgets",
+    "icon": "external",
+    "keywords": ["calendly", "calendar", "booking"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "block.php"
+    },
+    "align": false,
+    "supports": {
+        "mode": false,
+        "align": false,
+        "spacing": {
+            "margin": ["top", "bottom"]
+        },
+        "color": {
+            "background": true,
+            "gradients": false,
+            "text": false
+        }
+    },
+    "attributes": {
+        "style": {
+            "type": "object",
+            "default": {
+                "spacing": {
+                    "margin": {
+                        "top": "80px",
+                        "bottom": "80px"
+                    }
+                }
+            }
+        }
+    }
+}
