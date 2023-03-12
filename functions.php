@@ -7,26 +7,13 @@ add_filter('acf/settings/rest_api_format', function () {
   return 'standard';
 });
 
-// Change the JWT token issuer:
+/*
+  Change the JWT token issuer:
+*/
 add_filter('jwt_auth_iss', function () {
   // Default value is get_bloginfo( 'url' );
   return site_url();
 });
-
-// Adds a custom REST API endpoint "/menu" which returns WP menu data
-add_action('rest_api_init', function () {
-  register_rest_route('wp/v2', 'menu', array(
-    'methods' => 'GET',
-    'callback' => 'custom_wp_menu',
-  ));
-});
-
-// create custom function to return nav menu
-function custom_wp_menu() {
-   // Replace your menu name, slug or ID carefully
-   return wp_get_nav_menu_items('Navbar');
-}
-
 
 /*
   Add ability for "editor" user role to edit WP Menus, but hide all other submenus under Appearance (for editors only) -- eg. we don't want clients to be able to switch/deactivate theme and break site 
